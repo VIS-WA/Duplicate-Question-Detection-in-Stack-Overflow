@@ -1,0 +1,23 @@
+Link: https://data.stackexchange.com/stackoverflow/query/edit/1510840
+Query:
+select distinct top 500 p.id as [Post Link], p.id as [Post ID], 
+p.title as [Title],p.body as [Body], p.tags as [Tags]
+--a.AboutMe as [Author Profile], a.UpVotes as [Up Votes], a.Reputation
+from posts p
+inner join posthistory ph 
+   on ph.postid = p.id
+inner join Posts a
+   on p.Id = a.ParentId
+inner join users us
+   on p.OwnerUserId = us.id
+inner join Comments cm
+   on a.Id = cm.PostId
+where (
+p.closeddate is not null
+and p.AcceptedAnswerId is not null
+and p.posttypeid = 1 -- Q
+and ph.posthistorytypeid  = 10 -- closed
+and ph.comment in (1, 101)) -- dupe
+and (p.answercount > 5)
+---OR ((p.posttypeid=1) and (p.answercount > 0))
+order by p.Id asc
