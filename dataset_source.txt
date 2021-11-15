@@ -1,9 +1,11 @@
 Link: https://data.stackexchange.com/stackoverflow/query/edit/1510845
 
 Query:
+### Distinct original questions and multiple duplicate questions tag with original questions
 
 SELECT 
-  p.Id AS OId,
+  DISTINCT TOP 10000 p.Id AS OId,
+  p.CreationDate,
   p.Title as OTitle,
   p.Body as OBody,
   p.Tags as OTags,
@@ -18,3 +20,4 @@ WHERE
   p.PostTypeId = 1 -- Question
   AND ph.PostHistoryTypeId = 10 -- Close event
   AND ph.Comment = 101 -- Dupe
+ ORDER BY pd.Id ASC
