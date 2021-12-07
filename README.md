@@ -6,7 +6,8 @@
 ```
 |_ LDA_trial.ipynb => Sample LDA reference code
 |_ model + GUI.ipynb => A complete implementation of the model with GUI
-|_ Primary.ipynb => Implementation of the model
+|_ Primary.ipynb => Implementation of the dupPredictor model on Programming dataset
+|_ PrimaryPhysics.ipynb => Implementation of the dupPredictor on Physics dataset
 |_ bg.jpg => Reference background image for the GUI
 |_ Dataset.csv => Dataset used for the project
 |_ GUI.py => Python script of GUI implemented
