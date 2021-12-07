@@ -1,4 +1,4 @@
-# SMAI Course Project
+# SMAI Course Project Monsoon 2021
 ## Duplicate-Question-Detection-in-Stack-Overflow
 ## Paper: [Zhang Y, Lo D, Xia X et al. Multi-factor duplicate question detection in Stack Overflow. JOURNAL OF  COMPUTER SCIENCE AND TECHNOLOGY 30(5): 981–997 Sept. 2015. DOI 10.1007/s11390-015-1576-4 ](https://link.springer.com/content/pdf/10.1007/s11390-015-1576-4.pdf)
 
@@ -8,10 +8,10 @@
 |_ model + GUI.ipynb => A complete implementation of the model with GUI
 |_ Primary.ipynb => Implementation of the model
 |_ bg.jpg => Reference background image for the GUI
-|_ Dataset.csv =>
-|_ GUI.py => 
-|_ Training set Similarity scores.npy =>
-|_ dataset_source.txt => 
+|_ Dataset.csv => Dataset used for the project
+|_ GUI.py => Python script of GUI implemented
+|_ Training set Similarity scores.npy => CSV file with trained similarity scores
+|_ dataset_source.txt => sources for the datasets
 
 ```
 Main Steps undertaken:
