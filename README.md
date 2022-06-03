@@ -5,21 +5,26 @@ A model for predicting top-k similar questions for the given question.
 
 ### Directories
 ```
-|_ LDA_trial.ipynb => Sample LDA reference code
-|_ model + GUI.ipynb => A complete implementation of the model with GUI
-|_ Primary.ipynb => Implementation of the dupPredictor model on Programming dataset
-|_ PrimaryPhysics.ipynb => Implementation of the dupPredictor on Physics dataset
-|_ bg.jpg => Reference background image for the GUI
-|_ Dataset.csv => Dataset used for the project
-|_ GUI.py => Python script of GUI implemented
-|_ Training set Similarity scores.npy => CSV file with trained similarity scores
-|_ dataset_source.txt => sources for the datasets
+|_ Dataset => Has all datasets and precalculated arrays used while execution.
+	|_ Dataset.csv => Dataset used for the project
+	|_ Training set Similarity scores.npy => CSV file with trained similarity scores
+	|_ dataset_source.txt => sources for the datasets
 
+|_ src => Executable codes
+	|_ LDA_trial.ipynb => Sample LDA reference code
+	|_ model + GUI.ipynb => A complete implementation of the model with GUI
+	|_ Primary.ipynb => Implementation of the dupPredictor model on Programming dataset
+	|_ PrimaryPhysics.ipynb => Implementation of the dupPredictor on Physics dataset
+	|_ GUI.py => Python script of GUI implemented
+|_ bg.jpg => Reference background image for the GUI
 ```
-Main Steps undertaken:
+Major Steps performed:
 - Data Extraction 
-- Tokenisation (Preprocessing)
-- Porter Stemming (Preprocessing)
-- Extract ```topic``` from ```description```
-- Similarity Scores
+- Tokenisation and Porter Stemming (Preprocessing)
+- Vector Space Modelling (VSM)
+- Extract ```topics``` from ```description``` and ```title```
+- LDA
+- Similarity Scores computation
 - Composer Score and Parameter estimation
+
+### Note: The code has been restructured for better view. The paths used in the code might be broken. Correct them before using the code
