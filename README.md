@@ -1,7 +1,7 @@
 # SMAI Course Project Monsoon 2021
 ## Duplicate-Question-Detection-in-Stack-Overflow
-A model for predicting top-k similar questions for the given question.
-## Paper: [Zhang Y, Lo D, Xia X et al. Multi-factor duplicate question detection in Stack Overflow. JOURNAL OF  COMPUTER SCIENCE AND TECHNOLOGY 30(5): 981–997 Sept. 2015. DOI 10.1007/s11390-015-1576-4 ](https://link.springer.com/content/pdf/10.1007/s11390-015-1576-4.pdf)
+A model for predicting top-k similar questions for the given question. This is an implementation of the following paper
+## Reference Paper: [Zhang Y, Lo D, Xia X et al. Multi-factor duplicate question detection in Stack Overflow. JOURNAL OF  COMPUTER SCIENCE AND TECHNOLOGY 30(5): 981–997 Sept. 2015. DOI 10.1007/s11390-015-1576-4 ](https://link.springer.com/content/pdf/10.1007/s11390-015-1576-4.pdf)
 
 ### Directories
 ```
@@ -16,6 +16,7 @@ A model for predicting top-k similar questions for the given question.
 	|_ Primary.ipynb => Implementation of the dupPredictor model on Programming dataset
 	|_ PrimaryPhysics.ipynb => Implementation of the dupPredictor on Physics dataset
 	|_ GUI.py => Python script of GUI implemented
+|_ Report.pdf => Report to our course project
 |_ bg.jpg => Reference background image for the GUI
 ```
 Major Steps performed:
